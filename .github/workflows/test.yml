@@ -27,7 +27,7 @@ jobs:
 
       - name: Test
         run: |
-          oc api-resources \
+          oc api-resources #\
           #&&  oc whoami \
-          && oc status
+          #&& oc status
           
