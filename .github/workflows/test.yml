@@ -29,5 +29,5 @@ jobs:
         run: |
           oc api-resources \
           &&  oc whoami \
-          && oc status
+          && oc new-app dditrani/prueba-gha
           
