@@ -27,7 +27,7 @@ jobs:
 
       - name: Test
         run: |
-          oc api-resources \
+          oc oc delete $(oc get all | grep 'prueba-gha' | cut -f1 -d" ") \
           &&  oc whoami \
           && oc new-app dditrani/prueba-gha
           
