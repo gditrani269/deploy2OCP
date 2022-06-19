@@ -30,4 +30,5 @@ jobs:
           oc delete $(oc get all | grep 'prueba-gha' | cut -f1 -d" ") \
           &&  oc whoami \
           && oc new-app dditrani/prueba-gha
+        continue-on-error: true
           
