@@ -27,7 +27,7 @@ jobs:
 
       - name: Test
         run: |
-          oc api-resources \
+          oc new-app dditrani/prueba-gha \
           &&  oc whoami \
           && oc status
           
